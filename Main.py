@@ -1,8 +1,6 @@
-from Lexer import lexer
+from Jerarquia import Jerarquia as jr
 
-while(True):
-    intruccion = input(">>> ")
-    if(intruccion == "exit"):
-        break
-    lex = lexer(intruccion)
-    lex.lexerArithmetic()
+while True:
+    instruccion = input(">>>")
+    jerarquia = jr(instruccion) 
+    print(jerarquia.organizarEjecucion())
